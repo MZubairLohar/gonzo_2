@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    telemetry: false,
+    // telemetry: false,
 };
 
 export default nextConfig;
