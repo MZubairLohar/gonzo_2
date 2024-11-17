@@ -56,7 +56,7 @@ export default function First() {
               href="#_"
               className="flex  items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#0a6999] rounded-md hover:bg-[#818dc7] "
             >
-              How To Buy
+              How To Buy 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-5 h-5 ml-1"
