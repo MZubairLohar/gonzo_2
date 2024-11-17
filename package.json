@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build": "node src"
+    "lint": "next lint"
+    
   },
   "dependencies": {
     "@coinbase/wallet-sdk": "^4.2.3",
