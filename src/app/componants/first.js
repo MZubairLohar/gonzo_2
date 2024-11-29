@@ -38,7 +38,7 @@ export default function First() {
   };
 
   return (
-    <div className="w-full h-full px-10 py-16 pt-32 bg-[#6c83d6] flex items-center justify-center">
+    <div className="w-full h-full px-10 py-16 pt-32 bg-[#6c83d6] flex items-center justify-center md:px-20 sm:px-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl items-center">
         {/* Content Section */}
         <div className="space-y-6 text-center lg:text-left">
@@ -88,7 +88,8 @@ export default function First() {
           }}
         >
           <img
-            src="https://getdrawings.com/cliparts/the-muppets-clipart-26.gif"
+            // src="https://getdrawings.com/cliparts/the-muppets-clipart-26.gif"
+            src="./holebit.png"
             alt="Gonzo Treasure"
             className="w-full h-auto drop-shadow-xl "
           />

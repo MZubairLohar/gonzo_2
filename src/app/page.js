@@ -9,10 +9,10 @@ import Seventh from "./componants/seventh"
 
 export default function Home() {
   return (
-    <div className="m-0 w-full ">
+    <div className="md:-mx-20 px-0 md:item-center sm:md:item-center -px-16 ">
       <Navbar />
       <First />
-      <div className="h-2 z-0 bg-white rounded-lg">
+      <div className="w-full h-2 z-0 bg-white rounded-lg ">
       </div>
       <Second />
       <div className="h-2 z-0 bg-white rounded-lg">
@@ -27,8 +27,6 @@ export default function Home() {
       <div className="h-2 z-0 bg-white rounded-lg">
       </div>
       <Sixth/>
-      <div className="h-2 z-0 bg-white rounded-lg">
-      </div>
       <Seventh />
     </div>
   );

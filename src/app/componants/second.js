@@ -1,7 +1,7 @@
 
 export default function Second () {
     return (
-      <div id="sectionTwo" className="w-full bg-[#6c83d6] max-w-7xl px-4 mx-auto sm:px-8 mt-24 mb-20 ">
+      <div id="sectionTwo" className="w-full sm:w-screen bg-[#6c83d6] max-w-7xl px-4 mx-auto sm:px-8 mt-24 mb-20 ">
           <blockquote className="relative grid items-center bg-white shadow-xl md:grid-cols-3 rounded-xl">     
               <img className="hidden object-cover w-full h-full rounded-l-xl md:block " style={{clipPath :" polygon(0 0%, 100% 0%, 86% 100%, 0% 100%"}} src="https://i.pinimg.com/564x/54/23/84/5423848a755f9ad8303485f1fbefcd40.jpg" />
               <article className="relative p-6 md:p-8 md:col-span-2">

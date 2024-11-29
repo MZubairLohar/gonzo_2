@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Fifth() {
   return (
-    <div className="grid bg-[#6c83d6] place-items-center font-custom tracking-widest pb-8">
-      <div className=" mt-20 text-7xl text-white ">Bonuses & Referrals</div>
+    <div className="grid bg-[#6c83d6] place-items-center font-custom tracking-widest pb-8 text-center ">
+      <div className=" mt-20 lg:text-7xl sm:text-base text-white ">Bonuses & Referrals</div>
         <p className="text-white" >Ready for Whales and influencers!</p>
-      <div className="m-4 p-20 mx-auto bg-white rounded-xl shadow-md overflow-hidden max-w-5xl">
+      <div className="m-4 lg:p-20 sm:p-10 mx-auto bg-white rounded-xl shadow-md overflow-hidden lg:max-w-5xl sm:w-screen">
           <div className="md:flex">
-            <div className="p-8 place-items-center">
+            {/* <div className="p-8 place-items-center">
               <div className="uppercase tracking-wider text-3xl text-black text-center font-semibold font-custom2 text-start">
                     Volume - Bonus 
                     <div className="text-center">
@@ -38,8 +38,8 @@ export default function Fifth() {
                         Bonus 12% Gonzo
                     </p>
               </div>
-            </div>
-            <div className="p-8 place-items-center ">
+            </div> */}
+            <div className="p-8 place-items-center text-center">
               <div className="uppercase tracking-wider text-3xl text-center text-black font-semibold font-custom2">
                     Referral - Bonus 
                     <div className="text-center tracking-wider">
