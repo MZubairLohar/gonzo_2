@@ -1,4 +1,4 @@
-// File: /Users/macbookpro/Documents/programming/clients/gonzo_um/gonzo_2/src/app/page.js
+// File: /Users/macbookpro/Documents/programming/clients/Gonzo_2/src/app/page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

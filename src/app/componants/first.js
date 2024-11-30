@@ -44,7 +44,7 @@ export default function First() {
         <div className="space-y-6 text-center lg:text-left">
           <h1 className="text-gray-900 font-extrabold tracking-wide text-4xl lg:text-5xl">
             <span className="block text-[#0a6999]">Gonzo</span>
-            <span className="block text-white">Treasure</span>
+            <span className="block text-white">The Dancing Machine</span>
           </h1>
           <p className="text-black font-medium text-lg lg:text-xl">
             Hodl it to Get Rich. Introducing Treasure of Gonzo, the most

@@ -71,12 +71,13 @@ export default function Navbar() {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
-              src="https://i.pinimg.com/originals/25/ac/28/25ac28d0d4e297348c00ccc5285339ed.png"
+              // src="https://i.pinimg.com/originals/25/ac/28/25ac28d0d4e297348c00ccc5285339ed.png"
+              src="/dota.png"
               className="h-12"
               alt="Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap lighttext-white tracking-wider text-[#026c9e]">
-              Great Gonzo
+               Dancing Machine
             </span>
           </a>
         </Link>
@@ -176,19 +177,10 @@ export default function Navbar() {
               </ScrollLink>
             </li>
             <li>
-              <Link href="/trade" legacyBehavior>
-                 <a className="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
-                  {web3Provider == null ? (
-                    <button className="" onClick={connectWallet}>
-                      Buy
-                    </button>
-                  ) : (
-                    <div>
-                      <p>Connected</p>
-                    </div>
-                  )}
-                </a> 
-              
+              <Link  href="/trade" legacyBehavior>
+                <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
+                  Buy
+                </p>
               </Link>
             </li>
           </ul>
