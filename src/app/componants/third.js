@@ -13,7 +13,7 @@ export default function Third() {
               <div className="md:shrink-0">
                 <img
                   className="h-48 w-full object-cover md:h-full md:w-48"
-                  src="https://img.freepik.com/free-vector/realistic-money-template_1284-14310.jpg?t=st=1727180055~exp=1727183655~hmac=0fe73825784d66b0452aa8f28a006de2fd8022f726d268542d97926d7c05dfba&w=996"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpYEoMM7xK1CqJTEwlvqY3zPzcIHWSYaKUNQ&s"
                 />
               </div>
               <div className="p-8">
