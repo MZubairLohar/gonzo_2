@@ -12,8 +12,8 @@ export default function Third() {
             <div className="md:flex">
               <div className="md:shrink-0">
                 <img
-                  className="h-48 w-full object-cover md:h-full md:w-48"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpYEoMM7xK1CqJTEwlvqY3zPzcIHWSYaKUNQ&s"
+                  className="h-48 w-full object-cover md:h-full md:w-56"
+                  src="https://miro.medium.com/v2/resize:fit:555/1*FjSkfan-Kh3vrgtlW8UP_g.png"
                 />
               </div>
               <div className="p-8">
@@ -39,8 +39,8 @@ export default function Third() {
             <div className="md:flex">
               <div className="md:shrink-0">
                 <img
-                  className="h-48 w-full object-cover md:h-full md:w-48 bg-contain"
-                  src="https://img.freepik.com/free-photo/gold-coin-tenge-kazakhstan-currency-money-icon-sign-symbol-business-financial-exchange-3d-background-illustration_56104-1983.jpg?t=st=1727180832~exp=1727184432~hmac=41def929b07bcbde32643b6e7195488849c2ce8a9b045df171bb592ee8c5f74c&w=1480"
+                  className="h-48 w-full object-cover md:h-full md:w-56 bg-contain"
+                  src="https://www.cryptotimes.io/wp-content/uploads/2024/05/Ethereum-Moving-Closer-to-4000-New-All-Time-High-Soon.jpg"
                 />
               </div>
               <div className="p-8">
@@ -68,7 +68,7 @@ export default function Third() {
               <div className="md:shrink-0">
                 <img
                   className="h-48 w-full object-cover md:h-full md:w-48"
-                  src="https://img.freepik.com/free-vector/wallet-with-bitcoin-currency-economy-shield_24877-56127.jpg?t=st=1727180749~exp=1727184349~hmac=6acc36487cb31a438f0b34502275cc49198f149275aab80b608d9a06a8e57818&w=996"
+                  src="https://en.cryptonomist.ch/wp-content/uploads/2020/06/token-ethereum-1.jpg"
                 />
               </div>
               <div className="p-8">

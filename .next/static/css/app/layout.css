@@ -1744,6 +1744,14 @@ body {
     width: 50%;
   }
 
+  .md\:w-52 {
+    width: 13rem;
+  }
+
+  .md\:w-56 {
+    width: 14rem;
+  }
+
   .md\:max-w-2xl {
     max-width: 42rem;
   }
