@@ -2,66 +2,15 @@
 import { useState } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
-import Web3Modal from "web3modal";
-import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
-import { WalletConnect } from "@web3-react/walletconnect";
 ("@web3-react/walletconnect");
 const ethers = require("ethers");
 
-const providerOptions = {
-//   coinbasewallet: {
-//     package: CoinbaseWalletSDK,
-//     options: {
-//       appName: "Web3Model ",
-//       infuraId: "https://rpc.testnet.fantom.network",
-//     },
-//   },
-  walletconnect: {
-    package: WalletConnect,
-    options: {
-      rpc: {
-        4002: "https://rpc.testnet.fantom.network", // Chain ID for Fantom Testnet
-      },
-      network: "fantom testnet", // Optional
-      qrcode: true, // Enable QR code for mobile wallets
-    },
-  },
-};
-
-let theme = {
-  background: "#202020", // Modal background color
-  main: "#ffffff", // Main text color
-  secondary: "#a0a0a0", // Secondary text color
-  border: "1px solid #ffffff", // Border style for modal
-  hover: "#f0f0f0", // Hover state color
-};
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-  const [web3Provider, setWeb3Provider] = useState(null);
 
-  async function connectWallet() {
-    try {
-      let web3Modal = new Web3Modal({
-        cacheProvider: false,
-        providerOptions,
-        theme,
-      });
-
-      const web3modalInstance = await web3Modal.connect();
-      const web3modalProvider = new ethers.providers.Web3Provider(
-        web3modalInstance
-      );
-      // console.log(web3modalProvider);
-      if (web3modalProvider) {
-        setWeb3Provider(web3modalProvider);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
   return (
     <nav className="bg-white lightbg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200  drop-shadow-xl lightborder-gray-600 font-custom">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -113,11 +62,11 @@ export default function Navbar() {
           } w-full md:flex md:w-auto md:order-1`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium tracking-wider border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white lightbg-gray-800 md:lightbg-gray-900 lightborder-gray-700">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium tracking-wider  border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white lightbg-gray-800 md:lightbg-gray-900 lightborder-gray-700">
             <li>
               <Link href="/" legacyBehavior>
                 <a
-                  className="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700"
+                  className="block py-2 px-3 text-gray-600 rounded font-bold hover:font-extrabold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700"
                   aria-current="page"
                 >
                   Home
@@ -125,19 +74,22 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <ScrollLink
-                to="sectionTwo" // This should match the ID of the element you want to scroll to
-                smooth={true}
-                duration={600}
-                offset={-100} // Adjust this offset based on your layout
-                className=""
-              >
-                <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
-                  About
-                </p>
-              </ScrollLink>
+              <Link href="/" legacyBehavior>
+                <ScrollLink
+                  to="sectionTwo" // This should match the ID of the element you want to scroll to
+                  smooth={true}
+                  duration={600}
+                  offset={-100} // Adjust this offset based on your layout
+                  className=""
+                >
+                  <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded font-bold hover:font-extrabold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
+                    About
+                  </p>
+                </ScrollLink>
+              </Link>
             </li>
             <li>
+            <Link href="/" legacyBehavior>
               <ScrollLink
                 to="sectionThree" // This should match the ID of the element you want to scroll to
                 smooth={true}
@@ -145,12 +97,14 @@ export default function Navbar() {
                 offset={-100} // Adjust this offset based on your layout
                 className=""
               >
-                <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
+                <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded font-bold hover:font-extrabold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
                   How to Buy
                 </p>
               </ScrollLink>
+            </Link>
             </li>
             <li>
+            <Link href="/" legacyBehavior>
               <ScrollLink
                 to="Tokenomics" // This should match the ID of the element you want to scroll to
                 smooth={true}
@@ -158,12 +112,14 @@ export default function Navbar() {
                 offset={-100} // Adjust this offset based on your layout
                 className=""
               >
-                <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
+                <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded font-bold hover:font-extrabold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
                   Tokenomics
                 </p>
               </ScrollLink>
+            </Link>
             </li>
             <li>
+            <Link href="/" legacyBehavior>
               <ScrollLink
                 to="roadmap" // This should match the ID of the element you want to scroll to
                 smooth={true}
@@ -171,17 +127,20 @@ export default function Navbar() {
                 offset={-100} // Adjust this offset based on your layout
                 className=""
               >
-                <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
+                <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded font-bold hover:font-extrabold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
                   Road Map
                 </p>
               </ScrollLink>
+            </Link>
             </li>
             <li>
               <Link  href="/trade" legacyBehavior>
-                <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
+                <p className="block py-2 px-3 cursor-pointer text-gray-600 rounded font-bold hover:font-extrabold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0079ac] md:p-0 md:lighthover:text-[#0079ac] lighttext-white lighthover:bg-gray-700 lighthover:text-white md:lighthover:bg-transparent lightborder-gray-700">
                   Buy
                 </p>
               </Link>
+            </li>
+            <li>
             </li>
           </ul>
         </div>

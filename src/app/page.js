@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "./componants/navbar";
 import First from "./componants/first";
 import Second from "./componants/second";
@@ -6,6 +7,8 @@ import Forth from "./componants/forth";
 import Fifth from "./componants/fifth";
 import Sixth from "./componants/sixth"
 import Seventh from "./componants/seventh"
+
+
 
 export default function Home() {
   return (

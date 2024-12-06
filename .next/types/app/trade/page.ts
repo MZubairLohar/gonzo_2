@@ -1,4 +1,4 @@
-// File: /Users/macbookpro/Documents/programming/clients/Gonzo_2/src/app/trade/page.js
+// File: /Users/macbookpro/Documents/programming/clients/Gonzo_2/src/app/trade/page.jsx
 import * as entry from '../../../../src/app/trade/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

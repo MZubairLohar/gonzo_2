@@ -1,3 +1,4 @@
+"use client";
 // import gonzoToken from "../images/gonzoToken.png"
 export default function Third() {
     return (

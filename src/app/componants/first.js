@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { ScrollLink } from "react-scroll";
 
 function throttle(func, delay) {
   let lastCall = 0;
@@ -52,23 +53,26 @@ export default function First() {
             world who is the greatest meme coin that ever existed!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+           
             <a
-              href="#_"
-              className="flex  items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#0a6999] rounded-md hover:bg-[#818dc7] "
+              // href="/sectionThree"
+              className="flex items-center justify-center py-3 text-md font-black text-white bg-transparent  "
             >
-              How To Buy 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 ml-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
+            
+                  How To Buy 
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5 ml-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
             </a>
+            
             <a
               href="/trade"
               className="flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#f8b447] rounded-md hover:bg-[#a10d25]"

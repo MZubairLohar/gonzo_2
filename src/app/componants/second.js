@@ -1,4 +1,5 @@
-
+"use client";
+import  React from "react"
 export default function Second () {
     return (
       <div id="sectionTwo" className="w-full sm:w-screen bg-[#6c83d6] max-w-7xl px-4 mx-auto sm:px-8 mt-24 mb-20 ">
